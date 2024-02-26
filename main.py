@@ -1,7 +1,7 @@
-print("HOLooooo")
-hola = "HOLAaaaaaaaaaaaaaa"
-print(hola)
-for i in range (0,8):
-    print ("Holeeee",i)
 
-print("NUEVO")
+
+print("\n------------------------")
+print("          BIEN")
+print("------------------------")
+for i in range (0,5):
+    print(i)

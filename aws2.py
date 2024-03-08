@@ -1,9 +1,13 @@
 import os
 import boto3
 
+
+#pip install awscli
+#aws configure
 #AWS_ACCESS_KEY_ID = "AKIA4MTWH243ELQQNT4P"
 #AWS_SECRET_ACCESS_KEY = "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"
-#eu-north-1
+#region = eu-north-1
+#format = .png
 #$env:AWS_ACCESS_KEY_ID="AKIA4MTWH243ELQQNT4P"
 #$env:AWS_SECRET_ACCESS_KEY="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"
 
@@ -22,4 +26,4 @@ import boto3
 client = boto3.Session(profile_name='default').client('s3')
 
 # Sube el archivo a S3
-client.upload_file('imagen2.jpg', 'clivi-infinite', 'nano.jpg')
+client.upload_file('imagen2.jpg', 'clivi-infinite', 'prueba.jpg')

@@ -23,7 +23,8 @@ import boto3
 #client = boto3.client('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
 
 # Crea un cliente de AWS S3 utilizando el perfil 'default'
+imagen = 'imagen2.jpg'
 client = boto3.Session(profile_name='default').client('s3')
 
 # Sube el archivo a S3
-client.upload_file('imagen2.jpg', 'clivi-infinite', 'prueba.jpg')
+client.upload_file(imagen, 'clivi-infinite', imagen)
